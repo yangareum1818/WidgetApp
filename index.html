@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/reset.min.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+	<title>Momentum App Assignment</title>
+</head>
+<body>
+	<main>
+		<header>
+			<h1 class="logo"><a href="/" title="logo">A</a></h1>
+
+			<div id="quote" class="quote_change">
+				<p></p>
+				<p></p>
+			</div>
+
+			<div class="login_info">
+				<div>Hello, <span id="greeting" class="greetings hidden"></span></div>
+				<button class="logout">Log Out</button>
+			</div>
+		</header>
+
+		<section>
+			<div class="left_weather">
+				<div id="weather">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div class="right_todo">
+				<ul id="todo-list"></ul>
+
+				<form id="todo-form" class="todo_forms">
+					<input type="text" placeholder="Write a To Do and Press Enter" required/>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<button class="bg_change"><i class="fa-thin fa-photo-film"></i>IMG Change</button>
+
+			<div class="today">
+				<p class="clock"></p>
+				<p class="day"></p>
+			</div>
+
+			<div class="help">이곳은 도움말 도움말</div>
+		</footer>
+	</main>
+
+	<section class="login_modal">
+		<form id="login-form" class="hidden">
+			<input required maxlength="12" type="text" placeholder="What is your name?" />
+			<button>Log In</button>
+		</form>
+	</section>
+	<script src="assets/js/setDefaultImageWhenRenderStart.js"></script>
+	<script src="assets/js/greeting.js"></script>
+	<script src="assets/js/clock.js"></script>
+	<script src="assets/js/quotes.js"></script>
+	<script src="assets/js/background.js"></script>
+	<script src="assets/js/todo.js"></script>
+	<script src="assets/js/weather.js"></script>
+</body>
+</html>

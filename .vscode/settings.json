@@ -1,0 +1,116 @@
+{
+  // 기본 설정
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.list.smoothScrolling": true,
+  "workbench.list.openMode": "doubleClick",
+
+  "explorer.openEditors.visible": 0,
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "editor.snippetSuggestions": "bottom",
+  "editor.fontFamily": "Menlo, Consolas, '나눔바른고딕', sans-serif",
+  "editor.fontSize": 13,
+  "editor.cursorStyle": "line",
+  "editor.renderWhitespace": "all",
+  // "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.colorDecorators": false,
+  "editor.linkedEditing": true,
+
+  "debug.console.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+
+  "scm.inputFontFamily": "editor",
+
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/*.ini": true
+  },
+
+  // 언어 관련 설정
+  "html.autoClosingTags": false,
+  "html.autoCreateQuotes": false,
+  "htmltagwrap.autoDeselectClosingTag": false,
+  "css.lint.hexColorLength": "ignore",
+  "scss.lint.hexColorLength": "ignore",
+  "scss.completion.completePropertyWithSemicolon": false,
+
+  // git 관련 설정
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  // **
+  // 확장프로그램 관련 설정 시작
+  "extensions.autoUpdate": false,
+
+  // [plugins] Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "ruby": "html",
+    "blade": "html",
+    "markdown": "html"
+  },
+  "emmet.showExpandedAbbreviation": "always",
+
+  // [plugins] Live Server
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+
+  // [plugins] Live Share
+  "liveshare.anonymousGuestApproval": "accept",
+
+  // [plugins] Project Manager
+  "projectManager.groupList": true,
+
+  // [plugins] Live Sass Compiler
+  // 작업 환경에 따라 workspace settings을 통해 경로 수정
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      // compile 된 css 파일이 생성될 위치 지정
+      // 지정하지 않으면 SASS 파일이 위치한 곳에 생성
+      "savePath": "~/../css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/node_modules/**",
+    "/.vscode/**"
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions",
+    "ie 11"
+  ],
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+  "liveSassCompile.settings.compileOnWatch": false,
+
+  // [plugins] gitlens
+  "gitlens.views.showRelativeDateMarkers": false,
+
+  // [plugins] px to rem
+  "cssrem.autoRemovePrefixZero": false,
+
+  // [plugins] prettier
+  "prettier.singleQuote": true,
+  // 확장프로그램 관련 설정 종료
+  // **
+
+  // 미분류 설정
+  "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.wordWrapColumn": 120
+}
