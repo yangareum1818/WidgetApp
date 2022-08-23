@@ -85,6 +85,25 @@ section {
 		justify-content: space-between;
 		flex-direction: row;
 	}
+
+	.left_weather {
+
+		.weather {
+
+			span {
+				display: block;
+				padding: 12px 6px;
+				background: rgba(255, 255, 255, .5);
+				border-radius: 25px;
+
+				&.frist-child {
+					font-size: 24px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
 	.right_todo {
 
 		.todo_forms {
